@@ -46,7 +46,7 @@ data = loadData(download)
 github_session.close()
 
 with st.form(key = 'form'):
-    cols_sel = st.beta_columns([0.48, 0.48, 0.02])
+    cols_sel = st.beta_columns([0.45, 0.45, 0.1])
 
     help_alloy0 = 'Κωδικός του κράματος που χυτευόταν έως τώρα'
     with cols_sel[0]:
