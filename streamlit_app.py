@@ -35,7 +35,7 @@ def loadData(download):
 st.title('Αλλαγή κράματος')
 
 password = st.text_input('Κωδικός πρόσβασης',
-                         max_chars = 10,
+                         max_chars = 12,
                          key = 'password',
                          type = 'password')
 
