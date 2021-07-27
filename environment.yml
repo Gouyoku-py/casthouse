@@ -2,3 +2,5 @@ name: specs
 dependencies:
   - requests
   - pandas=1.2.5
+  - pip:
+    - streamlit-analytics
