@@ -9,6 +9,9 @@ import io
 
 import pandas as pd
 import streamlit as st
+import streamlit_analytics
+
+streamlit_analytics.start_tracking()
 
 st.set_page_config(page_title = 'Αλλαγή Κράματος',
                    layout = 'centered',
@@ -74,3 +77,5 @@ frame = specs.style.applymap(lambda x: 'color: red' if x < 0
 
 if submit_button:
     st.dataframe(frame)
+    
+streamlit_analytics.stop_tracking()
